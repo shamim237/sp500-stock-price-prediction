@@ -42,7 +42,7 @@ def download_and_save_data():
         ticker_data[ticker].rename_axis('datetime', axis='index', inplace=True)
 
         # Save data for each ticker as a CSV file
-        folder_path = 'stock-data'  # Replace 'stock-data' with the desired folder path
+        folder_path = 'stock_data'  # Replace 'stock-data' with the desired folder path
         os.makedirs(folder_path, exist_ok=True)
 
         file_path = os.path.join(folder_path, f'{ticker}_stock_train_data.csv')
